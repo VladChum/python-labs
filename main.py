@@ -5,13 +5,13 @@ import sys
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO,
-                    stream=sys.stdout, format='%(message)s')
+                    stream=sys.stdout,
+                    format='%(message)s')
 
 
 def main():
     logger.info("hello world!!!")
-    string = ["My first program with python3 !", "Mw first program with docker !"]
-    for x in string:
+    for x in ["My first program with python3 !", "Mw first program with docker !"]:
         logger.info(x)
 
 
