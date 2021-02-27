@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # This is a sample Python script.
 import logging
 import sys
@@ -10,8 +11,8 @@ logging.basicConfig(level=logging.INFO,
 def main():
     logger.info("hello world!!!")
     string = ["My first program with python3 !", "Mw first program with docker !"]
-    logger.info(string[0])
-    logger.info(string[1])
+    for x in string:
+        logger.info(x)
 
 
 if __name__ == "__main__":
